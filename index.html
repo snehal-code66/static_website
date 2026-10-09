@@ -2,38 +2,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #eef2ff;
-      padding: 70px 20px;
-    }
-    .card {
-      background: white;
-      max-width: 600px;
-      margin: auto;
-      padding: 35px;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px #ccd;
-    }
-    h1 { color: #4338ca; }
-    p { color: #444; line-height: 1.7; }
-    a { color: #4338ca; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snehal | DevOps Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .card {
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+        }
+
+        .tag {
+            color: #67e8f9;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 span {
+            color: #67e8f9;
+        }
+
+        p {
+            color: #e0e7ff;
+            font-size: 15px;
+            line-height: 1.9;
+            margin: 14px 0;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .skills span {
+            background: rgba(103, 232, 249, 0.1);
+            border: 1px solid #67e8f9;
+            color: #a5f3fc;
+            padding: 9px 16px;
+            border-radius: 25px;
+            font-size: 13px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 27px;
+            border-radius: 30px;
+            background: #67e8f9;
+            color: #17133b;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(103, 232, 249, 0.3);
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #c4b5fd;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 35px 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Welcome to My Website!</h1>
-    <p>Hello! I am learning DevOps and Cloud Computing.</p>
-    <p>This static website is hosted using GitHub Pages.</p>
-    <p>Created as part of my Elevate Lab Internship.</p>
-    <a href="https://github.com/snehal-code66">
-      Visit My GitHub Profile
-    </a>
-  </div>
+    <main class="card">
+        <div class="tag">MY DEVOPS JOURNEY</div>
+
+        <h1>Hello, I'm <span>Snehal!</span></h1>
+
+        <p>
+            Welcome to my personal website.
+            I am learning DevOps, Cloud Computing,
+            Git and Web Technologies.
+        </p>
+
+        <p>
+            This static website is hosted using GitHub Pages
+            as part of my Elevate Lab Internship.
+        </p>
+
+        <div class="skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Git & GitHub</span>
+            <span>DevOps</span>
+            <span>Cloud Computing</span>
+        </div>
+
+        <a class="button"
+           href="https://github.com/snehal-code66"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit My GitHub
+        </a>
+
+        <footer>
+            © 2026 Snehal Kute | Hosted with GitHub Pages
+        </footer>
+    </main>
 </body>
 </html>
